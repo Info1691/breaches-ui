@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breaches Manager</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>Breaches Manager</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="breachFilter">Filter by Breach Type:</label>
+      <select id="breachFilter">
+        <option value="">-- All Breaches --</option>
+      </select>
+    </section>
+
+    <section id="breachList" class="breach-list"></section>
+
+    <section class="breach-form">
+      <h2>Add / Edit Breach</h2>
+      <input type="text" id="breachCategory" placeholder="Category" />
+      <input type="text" id="breachTag" placeholder="Canonical Tag" />
+      <input type="text" id="breachAliases" placeholder="Aliases (comma separated)" />
+      <button id="addBreach">Add / Update Breach</button>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
